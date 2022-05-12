@@ -1,0 +1,158 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  min-height: 100vh;
+  /* background-color: red; */
+}
+
+
+/* .Paper {
+  background-color: red;
+
+} */
+
+.MuiPaper {
+  /* background-color: red; */
+}
+.App {
+  min-height: 100vh;
+  background-color: navajowhite;
+  /* background-color: white; */
+  /* background-image: url("./images/pexels-pixabay-235985.jpg");
+  background-repeat: no-repeat;
+  background-size: cover; */
+  /* background-image: url("./images/pexels-sasha-martynov-1260727.jpg"); */
+  background-size: cover;
+   /* padding: 5px; */
+}
+
+.tabContent {
+  background-color: red;
+  width: 50vw;
+  height: 50vh;
+  display: none;
+}
+
+
+.Tabs {
+  /* Maybe you can try the z-index option instead of display:none */
+  position: fixed;
+  bottom: 0;
+  height:  85vh;
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  box-shadow: 3px 2px 8px 5px rgba(0,0,0,0.65);
+  -webkit-box-shadow: 3px 2px 8px 5px rgba(0,0,0,0.65);
+  -moz-box-shadow: 3px 2px 8px 5px rgba(0,0,0,0.65);
+  border-radius: 0.2rem;
+  /* background-color: navajowhite; */
+
+  background-image: url("./images/pexels-sasha-martynov-1260727.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+
+#inactive {
+  display: flex;
+  background: red;
+}
+.title {
+  /* background-color: white; */
+  background: none;
+  border: none;
+  border-radius: 0.5rem 0.5rem 0 0;
+  min-height: 10vh;
+  text-align: center;
+  font-size:  3vh;
+  font-weight: 700;
+}
+
+.note {
+  /* background-color: blanchedalmond;
+  background-color: white;  */
+  background: none;
+  height: 80vh;
+  padding-inline: 10%;
+  border: none;
+  border-radius: 0 0 0.5rem 0.5rem;
+  font-family: cursive;
+  /* text-align: left; */
+
+}
+.note:focus, .note:active, .title:focus, .title:active {
+  /* border: none; */
+  outline: none;
+}
+
+.noteNav {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 40vw;
+  height: 85vh;
+  z-index: 2;
+  overflow-y: scroll;
+  background-color: rgb(83, 80, 80);
+  background-color: black;
+  color: white;
+  box-shadow: 1px 1px 2px 2px rgba(0,0,0,0.65);
+-webkit-box-shadow: 1px 1px 2px 2px rgba(0,0,0,0.65);
+-moz-box-shadow: 1px 1px 2px 2px rgba(0,0,0,0.65);
+  border-top-right-radius: 0.5rem;
+}
+::-webkit-scrollbar {
+  /* background: green; */
+  width: 0px;
+}
+.noteNavButtons  {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 8vh;
+  background: none;
+  border: none;
+  border-bottom: 1px solid white;
+}
+.noteNavButtons button {
+  background: none;
+  border: none;
+}
+.navBtn {
+  color: black;
+  background-color: black;
+  /* width: 100% */
+  height: 100%;
+}
+
+.noteNavButtons textarea{
+  /* height: 20px; */
+  resize: none;
+  width: 100%;
+}
+
+@media only screen and (min-width: 1025px) {
+  .title {
+
+  }
+  .Tabs {
+    right: 1vw;
+    bottom: 0vh;
+    width: 80vw;
+    height: 90vh;
+  }
+
+  .noteNav {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 15vw;
+    height: 90vh;
+    border-top-right-radius: 0.5rem;
+  }
+}
